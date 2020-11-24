@@ -1,13 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  background-color: #9f5f80;
+  padding: 0;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3c1f3c;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 700px;
+  height: 120px;
+  background-color: #3c1f3c;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+}
+
+.app {
+  max-width: 700px;
+  width: 90%;
+  margin: 120px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffba93;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #3c1f3c;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.add-movie {
+  width: 100%;
+  background-color: #3c1f3c;
+  margin: 5px 0;
+  text-align: center;
+  padding: 10px 0;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  border: 0;
+  outline: none;
+}
+
+input[type="submit"] {
+  margin: 10px auto;
+  background-color: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
+}
+
+.movie-list {
+  width: 100%;
+  background-color: #3c1f3c;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.movie-item {
+  height: 40px;
+  margin: 3px 0;
+  list-style: none;
+  display: flex;
+}
+
+.movie-item div {
+  width: 50%;
 }
